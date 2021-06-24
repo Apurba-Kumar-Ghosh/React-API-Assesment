@@ -39,7 +39,6 @@ export const NavGroup = styled.div`
 width : 100%;
 display : flex;
 align-items : center;
-border : 3px solid red;
 @media(max-width){
   justify-content : space-between;
   align-items : flex-end;
