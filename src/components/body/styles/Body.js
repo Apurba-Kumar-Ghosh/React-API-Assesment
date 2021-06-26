@@ -214,8 +214,13 @@ export const ListInputText = styled.div`
   color: black;
   height: fit-content;
   text-align: center;
-  overflow : hidden;
-  white-space: initial;
+
+  @media (max-width: 950px) {
+    max-width: 90%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
 `;
 export const ListText = styled.div`
   color: #2acfcf;
