@@ -35,16 +35,18 @@ export function BodyContainer({ children, ...restProps }) {
             return (
               <Body.ListItem key={index}>
                 <Body.ListLink>
-                  <Body.ListInputText>{item.original_link}</Body.ListInputText>
+                  <Body.ListInputText>
+                    <p>{item.original_link}</p>
+                  </Body.ListInputText>
                   <Body.ListText>{item.short_link}</Body.ListText>
                 </Body.ListLink>
 
                 <Body.ListButton
                   copiedLink={copiedLink}
                   setCopiedLink={setCopiedLink}
-                  link = {item.short_link}
+                  link={item.short_link}
                 >
-                  {copiedLink===item.short_link ? "Copied!" : "Copy!"}
+                  {copiedLink === item.short_link ? "Copied!" : "Copy!"}
                 </Body.ListButton>
               </Body.ListItem>
             );

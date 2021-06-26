@@ -220,6 +220,12 @@ export const ListInputText = styled.div`
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    p {
+      max-width: 15em;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
   }
 `;
 export const ListText = styled.div`
