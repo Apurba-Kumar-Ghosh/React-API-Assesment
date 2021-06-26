@@ -65,7 +65,7 @@ export const Feature = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 25em;
+  width: 50%;
   padding: 3em;
   margin: 0 auto;
   @media (max-width: 1100px) {
