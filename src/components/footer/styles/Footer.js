@@ -38,7 +38,7 @@ export const BoostButton = styled.div`
 export const Group = styled.div`
   display: flex;
   justify-content: space-between;
-  flex-basis: 33%;
+  flex-basis: 30%;
   color: white;
   @media (max-width: 1100px) {
     margin-top : 2em;
@@ -57,7 +57,7 @@ export const GroupItem = styled.div`
   justify-content: space-evenly;
 `;
 export const IconGroup = styled.div`
-  flex-basis: 33%;
+  flex-basis: 30%;
   display: flex;
   @media(max-width : 1100px){
     margin-top : 1em;
@@ -75,7 +75,7 @@ export const EndZone = styled.div`
   }
 `;
 export const IconMain = styled.div`
-  flex-basis: 33%;
+  flex-basis: 30%;
   dislplay: flex;
   justify-content: center;
   align-items: center;

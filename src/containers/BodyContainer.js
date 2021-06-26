@@ -54,8 +54,7 @@ export function BodyContainer({ children, ...restProps }) {
           <Body.Feature>
             <Body.FeatureHeading>Advanced Statistics</Body.FeatureHeading>
             <Body.FeatureText>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              mollitia, molestiae quas vel sint commodi repudiandae
+              Track how your links are performing across the web with our advanced statistics dashboard.
             </Body.FeatureText>
           </Body.Feature>
           <Body.Frame>
@@ -63,24 +62,21 @@ export function BodyContainer({ children, ...restProps }) {
               <Body.FrameIcon src="./images/icon-brand-recognition.svg" />
               <Body.Heading>Brand Recognition</Body.Heading>
               <Body.Text>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-                mollitia, molestiae quas vel sint commodi repudiandae
+                Boost your brand recognition with each click.Generic links dont mean a thing.Branded links help confidence in your content.
               </Body.Text>
             </Body.FrameItem>
             <Body.FrameItem>
               <Body.FrameIcon src="./images/icon-detailed-records.svg" />
-              <Body.Heading>Brand Recognition</Body.Heading>
+              <Body.Heading>Detailed Records</Body.Heading>
               <Body.Text>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-                mollitia, molestiae quas vel sint commodi repudiandae
+                Gain insights into who is clicking your links.Knowing when and where people engage with your content helps inform better decisions.
               </Body.Text>
             </Body.FrameItem>
             <Body.FrameItem>
               <Body.FrameIcon src="./images/icon-fully-customizable.svg" />
-              <Body.Heading>Brand Recognition</Body.Heading>
+              <Body.Heading>Fully Customizable</Body.Heading>
               <Body.Text>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-                mollitia, molestiae quas vel sint commodi repudiandae
+                Improve brand awareness and constant discoverable through customizable links,supercharging audience engagement
               </Body.Text>
             </Body.FrameItem>
           </Body.Frame>
