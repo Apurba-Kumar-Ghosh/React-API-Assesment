@@ -49,6 +49,7 @@ export const Container = styled.section`
 margin : 0 auto;
 padding : 0 10em;
 @media(max-width : 1100px){
+  margin : 0;
   padding : 0;
   display : flex;
   flex-direction : column;
@@ -166,7 +167,6 @@ export const HamDiv = styled.div`
   width: 5em;
   cursor: pointer;
   z-index: 1000;
-  box-shadow: 0 1rem 3rem rgba(182, 237, 200, 0.3);
   text-align: center;
   display : none;
 

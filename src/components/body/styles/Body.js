@@ -9,7 +9,7 @@ export const Container = styled.section`
   margin-top: 4em;
   @media(max-width : 1100px){
     margin : 0;
-    padding : 0 2em;
+    padding : 0;
   }
 `;
 export const InputContainer = styled.div`
