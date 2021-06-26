@@ -213,8 +213,8 @@ export const ListLink = styled.div`
 export const ListInputText = styled.div`
   color: black;
   height: fit-content;
-  font-weight: bold;
   text-align: center;
+  overflow : hidden;
   white-space: initial;
 `;
 export const ListText = styled.div`
