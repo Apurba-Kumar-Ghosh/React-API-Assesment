@@ -164,6 +164,7 @@ export const ListItem = styled.div`
   @media (max-width: 950px) {
     flex-direction: column;
     align-items: center;
+    padding-bottom : 1em;
   }
 `;
 export const ListLink = styled.div`
