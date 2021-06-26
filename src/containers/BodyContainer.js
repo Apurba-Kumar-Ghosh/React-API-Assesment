@@ -5,9 +5,10 @@ export function BodyContainer({ children, ...restProps }) {
   const [isActive, setIsActive] = useState(true);
   const [link, setLink] = useState('');
   const [obj, setObj] = useState([])
-  const [isCopied,setIsCopied] = useState(false)
+  const [copiedLink,setCopiedLink] = useState('')
   async function handleSubmit() {
     const query = link;
+    setLink('')
     console.log("started")
     const res = await fetch(
       `https://api.shrtco.de/v2/shorten?url=${query}`
@@ -39,12 +40,11 @@ export function BodyContainer({ children, ...restProps }) {
                 </Body.ListLink>
 
                 <Body.ListButton
-                  onClick={() => {
-                    navigator.clipboard.writeText(item.short_link);
-                    setIsCopied(true)
-                  }}
-                isCopied = {isCopied}>
-                  {isCopied===true ? "Copied!" : "Copy!"}
+                  copiedLink={copiedLink}
+                  setCopiedLink={setCopiedLink}
+                  link = {item.short_link}
+                >
+                  {copiedLink===item.short_link ? "Copied!" : "Copy!"}
                 </Body.ListButton>
               </Body.ListItem>
             );

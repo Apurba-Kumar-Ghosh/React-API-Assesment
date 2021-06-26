@@ -68,8 +68,14 @@ Body.InputContainer = function BodyInputContainer({ children, ...restProps }) {
 Body.ListContainer = function BodyListContainer({ children, ...restProps }) {
   return <ListContainer {...restProps}>{children}</ListContainer>;
 };
-Body.ListButton = function BodyListButton({ children, ...restProps }) {
-  return <ListButton {...restProps}>{children}</ListButton>;
+Body.ListButton = function BodyListButton({ children,copiedLink,setCopiedLink,link, ...restProps }) {
+  return <ListButton {...restProps}
+    onClick={() => {
+      setCopiedLink(link)
+      navigator.clipboard.writeText(link);
+    }}
+    isCopied = {copiedLink === link ? true : false}  
+  >{children}</ListButton>;
 };
 Body.ListItem = function BodyListItem({ children, ...restProps }){
     return <ListItem {...restProps}>{children}</ListItem>;
