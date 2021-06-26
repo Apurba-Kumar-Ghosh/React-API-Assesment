@@ -212,10 +212,10 @@ export const ListLink = styled.div`
 `;
 export const ListInputText = styled.div`
   color: black;
-  height : fit-content;
+  height: fit-content;
   font-weight: bold;
   text-align: center;
-  word-wrap : break-word;
+  white-space: initial;
 `;
 export const ListText = styled.div`
   color: #2acfcf;
