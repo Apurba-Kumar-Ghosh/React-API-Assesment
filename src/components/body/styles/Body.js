@@ -91,6 +91,8 @@ export const Frame = styled.div`
   @media (max-width: 1100px) {
     flex-direction: column;
     align-items: center;
+    justify-content : space-between;
+    gap : 10em;
     &::before {
       height: 100%;
       background-color: #2acfcf;
@@ -118,10 +120,10 @@ export const FrameItem = styled.div`
   justify-content: speace-evenly;
   align-items: flex-start;
   width: 15em;
-  height : 17em;
+  height: 17em;
   background-color: white;
   padding: 1em 2em;
-  z-index : 999;
+  z-index: 999;
 
   &:nth-of-type(2) {
     margin-top: 3em;
@@ -130,11 +132,12 @@ export const FrameItem = styled.div`
     margin-top: 6em;
   }
   @media (max-width: 1100px) {
+      position : relative;
     &:nth-of-type(2) {
-      margin-top: 3em;
+      margin-top: 0;
     }
     &:nth-of-type(3) {
-      margin-top: 3em;
+      margin-top: 0;
     }
   }
 `;
@@ -155,14 +158,22 @@ export const FrameIcon = styled.div`
   margin-bottom: 2em;
   padding : 1em 1em;
   img {
-    width: 3em;
-    height: 4em;
+    width: 2em;
+    height: 3em;
+  }
+  @media(max-width : 1100px){
+    position :absolute;
+    left : 40%;
   }
 `;
 export const Heading = styled.h2`
   padding: 0;
   margin: 0;
   font-size: 20px;
+  @media(max-width : 1100px){
+    margin-top : 1em;
+  }
+
 `;
 
 export const ListContainer = styled.div`
