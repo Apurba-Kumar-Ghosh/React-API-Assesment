@@ -176,9 +176,10 @@ export const ListLink = styled.div`
     align-items: center;
   }
 `;
-export const ListInputText = styled.p`
+export const ListInputText = styled.div`
   color: black;
   font-weight: bold;
+  text-align: center;
 `;
 export const ListText = styled.div`
   color: #2acfcf;
