@@ -112,7 +112,7 @@ export const Group = styled.div`
 `;
 export const Text = styled.p``;
 export const FeatureText = styled.p`
-  color: #9e9aa7;
+  color: #232127;
 `;
 export const FrameItem = styled.div`
   display: flex;
@@ -211,10 +211,10 @@ export const ListLink = styled.div`
   }
 `;
 export const ListInputText = styled.div`
-  color: black;
+  color: #3b3054;
   height: fit-content;
   text-align: center;
-
+  font-weight: 700;
   @media (max-width: 950px) {
     max-width: 90%;
     text-overflow: ellipsis;
