@@ -146,18 +146,17 @@ export const FeatureHeading = styled.h1`
 `;
 export const FrameIcon = styled.div`
   background-color: #3b3054;
-  width: 4em;
-  height: 4em;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -2em;
+  margin-top: -4em;
+  margin-bottom : 0;
   margin-bottom: 2em;
+  padding : 1em 1em;
   img {
-    width: 2em;
-    height: 3em;
-    padding: auto;
+    width: 3em;
+    height: 4em;
   }
 `;
 export const Heading = styled.h2`
