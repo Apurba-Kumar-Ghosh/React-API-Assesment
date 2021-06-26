@@ -12,50 +12,56 @@ import {
   FeatureText,
   Text,
   Icon,
-  NavGroup
+  NavGroup,
+  Hamburger,
+  HamDiv
 } from "./styles/header";
 export default function Header({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
 }
 
 Header.Background = function HeaderBackground({ children, ...restProps }) {
-  return <Background>
-    <img src="./images/illustration-working.svg" alt = "working illustration"/>
-    {children}
-  </Background>;
+  return (
+    <Background {...restProps}>
+      <img src="./images/illustration-working.svg" alt="working illustration" />
+      {children}
+    </Background>
+  );
 };
 Header.Navbar = function HeaderNavbar({ children, ...restProps }) {
-  return <Navbar>{children}</Navbar>;
+  return <Navbar {...restProps}>{children}</Navbar>;
 };
 Header.NavGroup = function HeaderNavGroup({ children, ...restProps }) {
-  return <NavGroup>{children}</NavGroup>;
+  return <NavGroup {...restProps}>{children}</NavGroup>;
 };
 Header.NavbarItems = function HeaderNavbarItems({ children, ...restProps }) {
-  return <NavbarItems>{children}</NavbarItems>;
+  return <NavbarItems {...restProps}>{children}</NavbarItems>;
 };
 Header.Feature = function HeaderFeature({ children, ...restProps }) {
-  return <Feature>{children}</Feature>;
+  return <Feature {...restProps}>{children}</Feature>;
 };
 Header.Frame = function HeaderFrame({ children, ...restProps }) {
-  return <Frame>{children}</Frame>;
+  return <Frame {...restProps}>{children}</Frame>;
 };
 Header.Icon = function HeaderIcon({ src, ...restProps }) {
-  return <Icon>
-    <img src= "./images/logo.svg" />
-  </Icon>;
+  return (
+    <Icon {...restProps}>
+      <img src="./images/logo.svg" />
+    </Icon>
+  );
 };
 
 Header.FeatureHeading = function HeaderFeatureHeading({
   children,
   ...restProps
 }) {
-  return <FeatureHeading>{children}</FeatureHeading>;
+  return <FeatureHeading {...restProps}>{children}</FeatureHeading>;
 };
 Header.FeatureText = function HeaderFeatureText({ children, ...restProps }) {
-  return <FeatureText>{children}</FeatureText>;
+  return <FeatureText {...restProps}>{children}</FeatureText>;
 };
 Header.Text = function HeaderText({ children, ...restProps }) {
-  return <Text>{children}</Text>;
+  return <Text {...restProps}>{children}</Text>;
 };
 Header.FeatureButton = function HeaderFeatureButton({ children, ...restProps })
   {
@@ -66,4 +72,10 @@ Header.Button = function HeaderButton({
   ...restProps
 }) {
   return <Button {...restProps}>{children}</Button>;
+};
+Header.Hamburger = function HeaderHamburger({ children, ...restProps }) {
+  return <Hamburger {...restProps}>{children}</Hamburger>;
+}
+Header.HamDiv = function HeaderHamDiv({ children, ...restProps }) {
+  return <HamDiv {...restProps}>{children}</HamDiv>;
 };

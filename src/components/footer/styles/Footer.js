@@ -23,10 +23,11 @@ export const BoostButton = styled.div`
   background: #2acfcf;
   border: none;
   border-radius: 0.5em;
-  padding: 1em 3em;
-  font-size: 1.1em;
+  padding: 0.5em 3em;
+  font-size : 1.1em;
   color: white;
   width: 5em;
+  margin-bottom : 1em;
 
   &:hover {
     cursor: pointer;

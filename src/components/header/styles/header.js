@@ -36,13 +36,14 @@ export const Background = styled.div`
     }
 `;
 export const NavGroup = styled.div`
-width : 100%;
-display : flex;
-align-items : center;
-@media(max-width){
-  justify-content : space-between;
-  align-items : flex-end;
-}
+  width: 100%;
+  display: flex;
+  align-items: center;
+  @media (max-width: 1100px) {
+    justify-content: space-between;
+    align-items: baseline;
+    position : relative;
+  }
 `;
 export const Container = styled.section`
 margin : 0 auto;
@@ -54,15 +55,22 @@ padding : 0 10em;
   justify-content : center;
 }`;
 export const Navbar = styled.div`
-flex-basis : 90%;
+  flex-basis: 90%;
   display: flex;
   justify-content: space-between;
-  align-items : center;
-  @media(max-width : 1100px){
-    flex-direction : column;
-    justify-content : center;
-    display : none;
-
+  align-items: center;
+  @media (max-width: 1100px) {
+    position : absolute;
+    top : 100%;
+    left : 15%;
+     display : ${({ showMenu }) => (showMenu === true ? "flex" : "none")};
+    flex-direction: column;
+    transition : display 2s ease-in;
+    justify-content: center;
+    align-items : center;
+    width : 70vw;
+    background-color: #3b3054;
+    border-radius : 2em;
   }
 `;
 export const Feature = styled.div`
@@ -89,10 +97,15 @@ cursor : pointer;
 color : black;
   }
   @media(max-width : 1100px){
-    width : 100%;
+      width : 100%;
       flex-direction : column;
       justify-content : center;
-      align-items : space-evenly;
+      align-items : center;
+      border-bottom : 0.75px solid black;
+      &:last-of-type {
+        border : none;
+        padding-bottom : 1em;
+      }
   }
 `;
 
@@ -127,6 +140,10 @@ export const Button = styled.button`
       padding : 0.6em 2.2em;
       font-weight : 700;
   }
+  @media(max-width : 700px){
+    width: 75%;
+    height : 3em;
+  }
 `;
 export const Frame = styled.div`
   margin-top : 1em;
@@ -142,4 +159,45 @@ export const Frame = styled.div`
 export const Icon = styled.div`
 flex-basis : 10%;
 height : 1em;
+`;
+export const HamDiv = styled.div`
+  border-radius: 50%;
+  height: 5em;
+  width: 5em;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 1rem 3rem rgba(182, 237, 200, 0.3);
+  text-align: center;
+  display : none;
+
+  @media(max-width : 1100px){
+    display : block;
+  }
+`;
+
+export const Hamburger = styled.span`
+position : relative;
+background-color : black;
+width : 2.5em;
+height : 2px;
+display : inline-block;
+margin-top : 2.5em;
+
+&::after,
+&::before{
+  position : absolute;
+  background-color : black;
+  content : "";
+  width : 2.5em;
+  display : inline-block;
+  height : 2px;
+  left : 0;
+}
+&::after{
+  top : 0.8em;
+}
+&::before{
+  top : -0.8em;
+}
+
 `;

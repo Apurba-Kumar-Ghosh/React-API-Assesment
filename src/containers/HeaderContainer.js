@@ -1,11 +1,19 @@
 import React from 'react'
 import  Header  from '../components/header/index'
 export function HeaderContainer({ children, ...restProps }) {
+  const [showMenu,setShowMenu] = React.useState(false)
     return (
       <Header>
         <Header.NavGroup>
-          <Header.Icon src= "./images/logo.svg"/>
-          <Header.Navbar>
+          <Header.Icon src="./images/logo.svg" />
+          <Header.HamDiv
+            onClick={() => {
+              setShowMenu(!showMenu);
+            }}
+          >
+            <Header.Hamburger />
+          </Header.HamDiv>
+          <Header.Navbar showMenu={showMenu}>
             <Header.NavbarItems>
               <Header.Text>Feature</Header.Text>
               <Header.Text>Pricing</Header.Text>

@@ -5,6 +5,7 @@ export function BodyContainer({ children, ...restProps }) {
   const [isActive, setIsActive] = useState(true);
   const [link, setLink] = useState('');
   const [obj, setObj] = useState([])
+  const [isCopied,setIsCopied] = useState(false)
   async function handleSubmit() {
     const query = link;
     console.log("started")
@@ -34,10 +35,17 @@ export function BodyContainer({ children, ...restProps }) {
               <Body.ListItem key={index}>
                 <Body.ListLink>
                   <Body.ListInputText>{item.original_link}</Body.ListInputText>
-                  <Body.ListText>{ item.short_link}</Body.ListText>
+                  <Body.ListText>{item.short_link}</Body.ListText>
                 </Body.ListLink>
 
-                <Body.ListButton>Copy!</Body.ListButton>
+                <Body.ListButton
+                  onClick={() => {
+                    navigator.clipboard.writeText(item.short_link);
+                    setIsCopied(true)
+                  }}
+                isCopied = {isCopied}>
+                  {isCopied===true ? "Copied!" : "Copy!"}
+                </Body.ListButton>
               </Body.ListItem>
             );
           })}

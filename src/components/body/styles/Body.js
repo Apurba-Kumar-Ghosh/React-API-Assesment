@@ -133,7 +133,7 @@ export const FrameIcon = styled.div`
   margin-bottom : 2em;
   img {
     width: 2em;
-    height: 2em;
+    height: 3em;
     padding  : auto;
   }
 `;
@@ -147,7 +147,8 @@ display : flex;
 flex-direction : column;
 align-items : center;
 justify-content : space-evenly;
-width : 100%;`;
+width : 100%;
+`;
 export const ListItem = styled.div`
 display : flex;
 justify-content : space-around;
@@ -155,21 +156,32 @@ align-items : center;
 border-radius : 0.75em;
 width : 90%;
 background-color : white;
-margin-top : 1em;`
+margin-top : 1em;
+
+@media(max-width : 950px){
+  flex-direction : column;
+  align-items : center;
+}
+`;
 export const ListLink = styled.div`
   flex-basis: 70%;
-  display : flex;
-  align-items : center;
-  justify-content : space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: 950px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 export const ListInputText = styled.p`
 color : black;
-font-size : 20px`;
+font-weight : bold;`;
 export const ListText = styled.div`
 color : #2acfcf;
-font-size : 20px`;
+font-size : 20px;
+font-weight : 700;`;
 export const ListButton = styled.button`
-  background: ${({ isCopied }) => (isCopied === true ? "#3b3054" : "#2acfcf")};
+  background-color: ${({ isCopied }) => (isCopied === true ? "#3b3054" : "#2acfcf")};
   border: none;
   height: 2em;
   border-radius: 0.5em;
