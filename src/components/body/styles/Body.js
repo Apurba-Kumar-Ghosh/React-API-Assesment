@@ -75,10 +75,31 @@ export const Feature = styled.div`
 `;
 export const Frame = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  width: 90%;
+  align-self: center;
+  position: relative;
+
+  &::before {
+    width: 100%;
+    background-color: #2acfcf;
+    content: "";
+    height: 10px;
+    position: absolute;
+    top: 45%;
+  }
   @media (max-width: 1100px) {
     flex-direction: column;
     align-items: center;
+    &::before {
+      height: 100%;
+      background-color: #2acfcf;
+      content: "";
+      width: 10px;
+      position: absolute;
+      left: 50%;
+      top : 0;
+    }
   }
 `;
 export const Group = styled.div`
@@ -96,11 +117,11 @@ export const FrameItem = styled.div`
   flex-direction: column;
   justify-content: speace-evenly;
   align-items: flex-start;
-  width: 12em;
-  height: 15em;
+  width: 15em;
+  height : 17em;
   background-color: white;
-  border-radius: 1em;
-  padding: 0 1em;
+  padding: 1em 2em;
+  z-index : 999;
 
   &:nth-of-type(2) {
     margin-top: 3em;
@@ -165,6 +186,7 @@ export const ListItem = styled.div`
     flex-direction: column;
     align-items: center;
     padding-bottom : 1em;
+    z-index : 999;
   }
 `;
 export const ListLink = styled.div`

@@ -19,19 +19,19 @@ export const Boost = styled.div`
 export const BoostHeader = styled.h1`
   color: white;
 `;
-export const BoostButton = styled.div`
+export const BoostButton = styled.button`
   background: #2acfcf;
   border: none;
   border-radius: 0.5em;
   padding: 0.5em 3em;
-  font-size : 1.1em;
+  font-size : 1em;
   color: white;
-  width: 5em;
+  width: 10em;
   margin-bottom : 1em;
 
   &:hover {
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 700;
     opacity: 0.75;
   }
 `;

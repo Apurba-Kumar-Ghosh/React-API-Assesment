@@ -9,7 +9,7 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 p{
-  color : #bfbfbf;
+  color : #9e9aa7;
   font-size : 18px;
   font-weight : 700;
 }
