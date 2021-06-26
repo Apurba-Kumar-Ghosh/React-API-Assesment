@@ -38,7 +38,7 @@ export const Background = styled.div`
       img{
         width : 13em;
         height : 13em;
-        margin-top : 2em;
+        margin-top : 5em;
       }
     }
 `;
