@@ -32,7 +32,7 @@ Body.FrameIcon = function BodyFrameIcon({ children,src, ...restProps }) {
 };
 
 Body.Group = function BodyGroup({ children, ...restProps }) {
-  return <Group>{children}</Group>;
+  return <Group {...restProps}>{children}</Group>;
 };
 
 Body.Feature = function BodyFeature({ children, ...restProps }) {
@@ -72,9 +72,7 @@ Body.ListButton = function BodyListButton({ children, ...restProps }) {
   return <ListButton {...restProps}>{children}</ListButton>;
 };
 Body.ListItem = function BodyListItem({ children, ...restProps }){
-    return <ListItem>
-        {children}
-    </ListItem>
+    return <ListItem {...restProps}>{children}</ListItem>;
 }
 Body.ListLink = function BodyListLink({ children, ...restProps }) {
   return <ListLink {...restProps}>{children}</ListLink>;

@@ -191,6 +191,7 @@ export const ListItem = styled.div`
   width: 90%;
   background-color: white;
   margin-top: 1em;
+  padding : 1em 0;
 
   @media (max-width: 950px) {
     flex-direction: column;
