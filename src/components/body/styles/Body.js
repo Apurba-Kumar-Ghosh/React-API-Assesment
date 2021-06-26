@@ -212,6 +212,7 @@ export const ListLink = styled.div`
 `;
 export const ListInputText = styled.div`
   color: black;
+  max-width : 100%;
   font-weight: bold;
   text-align: center;
 `;
