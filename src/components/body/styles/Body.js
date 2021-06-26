@@ -7,9 +7,9 @@ export const Container = styled.section`
   padding: 0 10em;
   margin: 0 auto;
   margin-top: 4em;
-  @media(max-width : 1100px){
-    margin : 0;
-    padding : 0;
+  @media (max-width: 1100px) {
+    margin: 0;
+    padding: 0 2em;
   }
 `;
 export const InputContainer = styled.div`
@@ -21,15 +21,16 @@ export const InputContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 2.5em 3em;
-  gap : 2em;
+  gap: 2em;
   border-radius: 0.5em;
   margin-top: -3.8em;
-  @media(max-width : 1100px){
-    gap : 1em;
-    padding-top : 1em;
-    padding-bottom : 1em;
-    width : 80%;
-    flex-direction : column;
+  @media (max-width: 1100px) {
+    gap: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 70%;
+    flex-direction: column;
+    align-items : center;
   }
 `;
 export const Input = styled.input`
@@ -39,8 +40,8 @@ export const Input = styled.input`
   &: focus {
     outline: none;
   }
-  @media(max-width : 1100px){
-    width : 100%;
+  @media (max-width: 1100px) {
+    width: 100%;
   }
 `;
 export const Button = styled.button`
@@ -68,23 +69,23 @@ export const Feature = styled.div`
   padding: 3em;
   margin: 0 auto;
   @media (max-width: 1100px) {
-    padding-left : 0;
-    padding-right : 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 `;
 export const Frame = styled.div`
   display: flex;
   justify-content: space-evenly;
   @media (max-width: 1100px) {
-    flex-direction : column;
-    align-items : center;
+    flex-direction: column;
+    align-items: center;
   }
 `;
 export const Group = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-bottom : 5em;
+  padding-bottom: 5em;
 `;
 export const Text = styled.p``;
 export const FeatureText = styled.p`
@@ -117,51 +118,53 @@ export const FrameItem = styled.div`
   }
 `;
 export const FeatureHeading = styled.h1`
-margin : 0;
-padding: 0;
-font-size : 30px;
-font-weight : 700;`;
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  font-weight: 700;
+`;
 export const FrameIcon = styled.div`
   background-color: #3b3054;
   width: 4em;
   height: 4em;
   border-radius: 50%;
-  display : flex;
-  justify-content : center;
-  align-items : center;
-  margin-top : -2em;
-  margin-bottom : 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -2em;
+  margin-bottom: 2em;
   img {
     width: 2em;
     height: 3em;
-    padding  : auto;
+    padding: auto;
   }
 `;
 export const Heading = styled.h2`
-padding : 0;
-margin : 0;
-font-size : 20px;`;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+`;
 
 export const ListContainer = styled.div`
-display : flex;
-flex-direction : column;
-align-items : center;
-justify-content : space-evenly;
-width : 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
 `;
 export const ListItem = styled.div`
-display : flex;
-justify-content : space-around;
-align-items : center;
-border-radius : 0.75em;
-width : 90%;
-background-color : white;
-margin-top : 1em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 0.75em;
+  width: 90%;
+  background-color: white;
+  margin-top: 1em;
 
-@media(max-width : 950px){
-  flex-direction : column;
-  align-items : center;
-}
+  @media (max-width: 950px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 export const ListLink = styled.div`
   flex-basis: 70%;
@@ -174,14 +177,17 @@ export const ListLink = styled.div`
   }
 `;
 export const ListInputText = styled.p`
-color : black;
-font-weight : bold;`;
+  color: black;
+  font-weight: bold;
+`;
 export const ListText = styled.div`
-color : #2acfcf;
-font-size : 20px;
-font-weight : 700;`;
+  color: #2acfcf;
+  font-size: 20px;
+  font-weight: 700;
+`;
 export const ListButton = styled.button`
-  background-color: ${({ isCopied }) => (isCopied === true ? "#3b3054" : "#2acfcf")};
+  background-color: ${({ isCopied }) =>
+    isCopied === true ? "#3b3054" : "#2acfcf"};
   border: none;
   height: 2em;
   border-radius: 0.5em;

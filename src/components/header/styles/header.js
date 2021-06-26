@@ -28,12 +28,6 @@ export const Background = styled.div`
     img{
         width : 100%;
     }
-    @media(max-width :1100px){
-      img{
-          width : 20em;
-          height : 20em;
-      }
-    }
 `;
 export const NavGroup = styled.div`
   width: 100%;
